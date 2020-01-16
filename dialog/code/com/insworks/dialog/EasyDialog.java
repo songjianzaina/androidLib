@@ -1,6 +1,6 @@
 package com.insworks.dialog;
 
-import android.support.v4.app.FragmentActivity;
+import androidx.fragment.app.FragmentActivity;
 import android.view.View;
 
 import com.insworks.lib_base.base.BaseDialog;

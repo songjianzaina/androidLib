@@ -6,13 +6,15 @@ import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 
+import androidx.appcompat.widget.AppCompatTextView;
+
 import com.inswork.lib_cloudbase.R;
 
 
 /**
  * 可自定义设置drawable宽高的TextView
  */
-public class DrawableTextView extends android.support.v7.widget.AppCompatTextView {
+public class DrawableTextView extends AppCompatTextView {
     private Drawable drawableLeft;
     private Drawable drawableRight;
     private Drawable drawableTop;

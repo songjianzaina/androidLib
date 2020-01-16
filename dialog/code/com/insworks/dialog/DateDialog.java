@@ -1,7 +1,7 @@
 package com.insworks.dialog;
 
 import android.app.Dialog;
-import android.support.v4.app.FragmentActivity;
+import androidx.fragment.app.FragmentActivity;
 
 import com.inswork.lib_cloudbase.R;
 import com.insworks.dialog.widget.LoopView;

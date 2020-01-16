@@ -1,7 +1,8 @@
 package com.zhowin.library.radius;
 
 import android.content.Context;
-import android.support.v7.widget.AppCompatCheckBox;
+
+import androidx.appcompat.widget.AppCompatCheckBox;
 import android.util.AttributeSet;
 
 import com.zhowin.library.radius.delegate.RadiusCompoundButtonDelegate;

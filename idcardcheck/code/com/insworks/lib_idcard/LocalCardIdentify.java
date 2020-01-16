@@ -1,7 +1,7 @@
 package com.insworks.lib_idcard;
 
 import android.app.Activity;
-import android.support.v4.app.ActivityCompat;
+import androidx.core.app.ActivityCompat;
 
 import com.insworks.lib_idcard.utils.CheckPermissionUtil;
 

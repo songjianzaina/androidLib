@@ -2,7 +2,7 @@ package com.insworks.lib_log;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import com.inswork.lib_cloudbase.R;
 
 public class LogTestActivity extends Activity {

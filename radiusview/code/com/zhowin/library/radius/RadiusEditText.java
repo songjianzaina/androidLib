@@ -3,6 +3,8 @@ package com.zhowin.library.radius;
 import android.content.Context;
 import android.util.AttributeSet;
 
+import androidx.appcompat.widget.AppCompatEditText;
+
 import com.zhowin.library.radius.delegate.RadiusTextViewDelegate;
 
 
@@ -10,7 +12,7 @@ import com.zhowin.library.radius.delegate.RadiusTextViewDelegate;
  * 用于需要圆角矩形框背景的EditText的情况,减少直接使用EditText时引入的shape资源文件
  * 1、初始化TextView的 RadiusTextViewDelegate
  */
-public class RadiusEditText extends android.support.v7.widget.AppCompatEditText {
+public class RadiusEditText extends AppCompatEditText {
 
     private RadiusTextViewDelegate delegate;
 

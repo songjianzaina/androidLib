@@ -6,7 +6,9 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
-import android.support.v4.content.ContextCompat;
+
+import androidx.appcompat.widget.AppCompatEditText;
+import androidx.core.content.ContextCompat;
 import android.text.TextUtils;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
@@ -26,7 +28,7 @@ import com.inswork.lib_cloudbase.R;
  * 1.删除当前输入文字，只有当前edittext有内容时才会显示该图片
  * 2.密码的显示和隐藏
  */
-public class AutoEditTextView extends android.support.v7.widget.AppCompatEditText {
+public class AutoEditTextView extends AppCompatEditText {
     //TODO 左侧的文字内容，没有则不设置
     private String leftText;
     //TODO 左侧文字的颜色

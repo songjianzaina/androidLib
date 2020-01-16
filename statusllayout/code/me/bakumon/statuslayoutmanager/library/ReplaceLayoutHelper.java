@@ -22,7 +22,8 @@
 
 package me.bakumon.statuslayoutmanager.library;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import android.view.View;
 import android.view.ViewGroup;
 import com.inswork.lib_cloudbase.R;

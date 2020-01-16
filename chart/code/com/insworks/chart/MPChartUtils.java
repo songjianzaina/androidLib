@@ -3,7 +3,7 @@ package com.insworks.chart;
 import android.app.Activity;
 import android.graphics.Color;
 import android.graphics.Matrix;
-import android.support.annotation.ColorInt;
+import androidx.annotation.ColorInt;
 
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.charts.Chart;

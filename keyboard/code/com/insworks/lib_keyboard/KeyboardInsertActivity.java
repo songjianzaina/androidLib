@@ -1,7 +1,7 @@
 package com.insworks.lib_keyboard;
 
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
+import androidx.fragment.app.FragmentActivity;
 import android.widget.Toast;
 
 import com.inswork.lib_cloudbase.R;

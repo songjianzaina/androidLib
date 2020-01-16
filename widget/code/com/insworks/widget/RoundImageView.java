@@ -10,13 +10,15 @@ import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.view.View;
 
+import androidx.appcompat.widget.AppCompatImageView;
+
 import com.inswork.lib_cloudbase.R;
 
 /**
  * @author yuqirong
  */
 
-public class RoundImageView extends android.support.v7.widget.AppCompatImageView {
+public class RoundImageView extends AppCompatImageView {
 
     private Path mPath;
     private RectF mRectF;

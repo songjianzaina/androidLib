@@ -1,7 +1,7 @@
 package com.wintone.utils;
 
-import android.support.v4.view.MotionEventCompat;
-import android.support.v4.view.ViewCompat;
+import androidx.core.view.MotionEventCompat;
+import androidx.core.view.ViewCompat;
 
 public class Utils {
     public static int[] convertYUV420_NV21toARGB8888(byte[] data, int width, int height) {

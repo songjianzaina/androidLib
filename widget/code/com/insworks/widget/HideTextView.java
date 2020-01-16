@@ -3,6 +3,8 @@ package com.insworks.widget;
 import android.content.Context;
 import android.util.AttributeSet;
 
+import androidx.appcompat.widget.AppCompatTextView;
+
 /**
  * @ProjectName: tftpay
  * @Package: com.qtopays.yunzf.widget
@@ -15,7 +17,7 @@ import android.util.AttributeSet;
  * @Version: 1.0
  * @Description: 带有隐藏功能的TextView
  */
-public class HideTextView extends android.support.v7.widget.AppCompatTextView {
+public class HideTextView extends AppCompatTextView {
 
     protected String visibleText;
     private boolean isHide;

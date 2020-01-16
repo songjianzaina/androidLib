@@ -1,7 +1,7 @@
 package com.insworks.viewpager;
 
 import android.app.Activity;
-import android.support.v4.app.FragmentActivity;
+import androidx.fragment.app.FragmentActivity;
 import android.view.ViewGroup;
 
 import com.insworks.viewpager.page.GuidePager;

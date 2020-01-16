@@ -1,7 +1,7 @@
 package com.insworks.lib_keyboard.one;
 
 import android.app.Activity;
-import android.support.annotation.NonNull;
+import androidx.annotation.Nullable;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
