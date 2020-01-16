@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <!--我的模块背景-->
+    <attr name="module_me_bg" format="reference|color"/>
+    <!--标题背景 小尺寸-->
+    <attr name="title_small_bg" format="reference|color"/>
+    <!--标题背景 中尺寸-->
+    <attr name="title_middle_bg" format="reference|color"/>
+    <!--收益界面背景-->
+    <attr name="earnmoney_bg" format="reference|color"/>
+    <!--按钮背景-->
+    <attr name="button_active_bg" format="reference|color"/>
+</resources>

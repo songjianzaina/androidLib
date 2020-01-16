@@ -1,0 +1,4 @@
+dependencies{
+    //友盟
+    implementation 'com.umeng.sdk:analytics:7.5.3'
+}

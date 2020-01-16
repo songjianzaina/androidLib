@@ -1,0 +1,4 @@
+<resources>
+    <string name="please_input_js_pwd">请输入结算密码</string>
+    <string name="input_current_business_pwd">请输入当前交易密码</string>
+</resources>

@@ -1,0 +1,4 @@
+dependencies {
+    //第三方金额滚动控件
+    implementation rootProject.ext.dependencies.tickerview
+}

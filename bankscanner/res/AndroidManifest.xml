@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+    <activity android:name="com.wintone.smartvision_bankCard.ScanCamera">
+        <intent-filter>
+            <action android:name="wintone.bankCard.scan_camera" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+    <activity android:name="com.wintone.ShowResult" />
+    </application>
+</manifest>

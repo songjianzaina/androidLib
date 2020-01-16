@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <activity
+            android:name="com.inswork.indexbar.bank.BankQuickActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" /> <!-- 银行选择 -->
+        <activity
+            android:name="com.inswork.indexbar.bank.BankQuickActivity_cloud"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" /> <!-- 银行选择  cloudpay 定制 后期可删 -->
+    </application>
+</manifest>

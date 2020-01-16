@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_gary_light">#efefef</color>
+
+    <color name="color_text_dark">#303030</color>
+    <color name="color_text_mid">#666666</color>
+    <color name="color_text_light">#999999</color>
+
+    <color name="color_line">#e6e6e6</color>
+
+    <color name="color_done_background">#FFF</color>
+    <color name="color_done_content">#303030</color>
+</resources>

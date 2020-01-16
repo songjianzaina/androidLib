@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <declare-styleable name="CommonButtonAttrs">
+        //按钮圆角大小
+        <attr name="button_radius" format="dimension|reference"></attr>
+        //按钮可用的颜色
+        <attr name="button_enable_solid_color" format="color|reference"></attr>
+        //按钮不可用的颜色
+        <attr name="button_unenable_solid_color" format="color|reference"></attr>
+        //按钮描边的颜色
+        <attr name="button_stroke_color" format="color|reference"></attr>
+        //按钮描边的宽度,为0时,描边不可用
+        <attr name="button_stroke_width" format="reference|dimension"></attr>
+        //按钮点击的颜色
+        <attr name="button_press_color" format="color|reference"></attr>
+        //设置自定义selector时,其余属性不可用
+        <attr name="button_click_selector" format="reference"></attr>
+    </declare-styleable>
+    <declare-styleable name="RoundImageView">
+        <attr name="radius" format="reference|dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="DrawableTextView">
+        <attr name="leftDrawable" format="reference" />
+        <attr name="leftDrawableWidth" format="dimension" />
+        <attr name="leftDrawableHeight" format="dimension" />
+        <attr name="rightDrawable" format="reference" />
+        <attr name="rightDrawableWidth" format="dimension" />
+        <attr name="rightDrawableHeight" format="dimension" />
+        <attr name="topDrawable" format="reference" />
+        <attr name="topDrawableWidth" format="dimension" />
+        <attr name="topDrawableHeight" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="GeneralEditText">
+        <attr name="showClearView" format="boolean"></attr>
+        <attr name="switchPasswordVisible" format="boolean"></attr>
+        <attr name="formatText" format="boolean"></attr>
+        <attr name="maxLength" format="integer"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="AutoEditTextView">
+        <!--//左侧设置的文字，如果设置了就显示，不设置就不显示-->
+        <attr name="leftText" format="string" />
+        <!--左侧文字的颜色-->
+        <attr name="leftTextColor" format="color" />
+        <!--左侧文字的大小-->
+        <attr name="leftTextSize" format="float" />
+        <!--左侧文字距离光标的距离-->
+        <attr name="leftTextPadding" format="dimension" />
+        <!--右侧图标点击需要处理的类型 0 删除当前内容 1隐藏和显示密码-->
+        <attr name="rightButtonClickType" format="integer" />
+        <!--是否要显示底部的线-->
+        <attr name="isShowDownLine" format="boolean" />
+        <!--设置底部线默认的颜色-->
+        <attr name="downLineDefaultColor" format="color"/>
+        <!--设置EditText获取焦点之后底部线的颜色-->
+        <attr name="downLineFocusColor" format="color"/>
+        <!--背景颜色-->
+        <attr name="backgroundColor" format="reference|color" />
+    </declare-styleable>
+</resources>

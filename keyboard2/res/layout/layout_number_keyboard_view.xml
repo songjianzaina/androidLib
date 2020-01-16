@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chhd.customkeyboard.keyboard.NumberKeyboardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/number_keyboard_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_line"
+    android:keyBackground="@drawable/bg_key"
+    android:keyPreviewLayout="@null"
+    android:keyTextColor="@color/color_text_dark"
+    android:shadowColor="@android:color/black"
+    android:shadowRadius="0.0"
+    android:tag="@string/tag_base_custom_view">
+
+</com.chhd.customkeyboard.keyboard.NumberKeyboardView>

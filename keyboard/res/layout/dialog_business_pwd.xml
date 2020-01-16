@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/keyboard"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/common_dialog_bg">
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@mipmap/icon_close" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/please_input_js_pwd"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_size_16sp"
+            android:layout_marginTop="15dp" />
+
+        <View
+            android:id="@+id/title_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/title"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/common_divider_horizontal" />
+
+        <TextView
+            android:id="@+id/title_hint"
+            android:layout_below="@id/title_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="提现"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:id="@+id/withdraw_cash_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_hint"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textColor="@color/common_dark"
+            tools:text="10.00" />
+
+        <include
+            layout="@layout/layout_input_pwd"
+            android:layout_height="48dp"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/withdraw_cash_num"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/keyboard"
+        layout="@layout/layout_num_keyboard" />
+</RelativeLayout>

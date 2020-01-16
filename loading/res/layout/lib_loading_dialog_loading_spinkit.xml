@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/lib_loading__dialog_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="36.0dip"
+    android:paddingTop="18.0dip"
+    android:paddingRight="36.0dip"
+    android:paddingBottom="18.0dip">
+
+    <com.vondear.rxtools.view.progressing.SpinKitView
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.CubeGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10.0dip"
+        app:SpinKit_Color="#ff3f51b5" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="10.0dip"
+        android:text="正在进行网络请求..."
+        android:textColor="@color/brown"
+        android:textSize="16.0sp" />
+</LinearLayout>

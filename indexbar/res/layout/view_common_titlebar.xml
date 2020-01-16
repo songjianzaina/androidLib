@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    >
+
+    <TextView
+        android:id="@+id/titlebar_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="74dp"
+        android:layout_marginRight="74dp"
+        android:ellipsize="middle"
+        android:singleLine="true"
+        android:text="选择银行"
+        android:textColor="#333333"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/titlebar_left_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:src="@mipmap/fanhui" />
+
+    <TextView
+        android:id="@+id/titlebar_left_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:drawablePadding="6dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/titlebar_right_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" />
+
+    <TextView
+        android:id="@+id/titlebar_right_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:drawablePadding="6dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="#000"
+        android:textSize="16sp" />
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zsr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:orientation="vertical">
+    <!--允许孙节点溢出 适用于底部导航栏 中间按钮凸起-->
+    <!--https://www.jianshu.com/p/4a89d80284de-->
+    <!--android:clipChildren="false"-->
+
+    <!--第一种样式 缩放版 自动轮播-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:clipChildren="false">
+        <!--缩放版pager样式-->
+        <com.zhengsr.viewpagerlib.view.BannerViewPager
+            android:id="@+id/loop_viewpager_zoom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:clipChildren="false"
+            android:visibility="gone"
+            zsr:banner_isloop="true"
+            zsr:banner_looptime="3000"
+            zsr:banner_switchtime="600" />
+        <!--普通版pager平面样式-->
+        <com.zhengsr.viewpagerlib.view.BannerViewPager
+            android:id="@+id/loop_viewpager_normal"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            zsr:banner_isloop="true"
+            android:visibility="gone"
+            zsr:banner_looptime="3000"
+            zsr:banner_loop_max_count="6"
+            zsr:banner_switchtime="600" />
+        <!--缩放版指示器样式-->
+        <com.zhengsr.viewpagerlib.indicator.ZoomIndicator
+            android:id="@+id/bottom_scale_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:visibility="gone"
+            zsr:zoom_alpha_min="0.5"
+            zsr:zoom_leftmargin="10dp"
+            zsr:zoom_max="1.5"
+            zsr:zoom_selector="@drawable/bottom_circle" />
+
+        <!--条形指示器-->
+        <com.zhengsr.viewpagerlib.indicator.TransIndicator
+            android:id="@+id/bottom_trans_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            zsr:trans_defaultcolor="@color/gray_cccc"
+            zsr:trans_height="5dp"
+            zsr:trans_leftmargin="10dp"
+            zsr:trans_movecolor="@color/white"
+            zsr:trans_round_radius="4dp"
+            zsr:trans_type="round"
+            zsr:trans_width="15dp" />
+
+        <!--圆形文字版指示器-->
+        <com.zhengsr.viewpagerlib.indicator.TextIndicator
+            android:id="@+id/bottom_text_layout"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="5dp"
+            android:visibility="gone"
+            zsr:word_circle_color="@color/black_ff"
+            zsr:word_show_circle="true"
+            zsr:word_text_color="@color/white"
+            zsr:word_text_size="14sp" />
+    </FrameLayout>
+
+</LinearLayout>

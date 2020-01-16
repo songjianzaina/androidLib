@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.insworks.lib_anim">
+
+    <application
+        >
+        <!--<activity android:name=".MyProfitActivity">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="${Prefix}activity_my_profit" />-->
+
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+    </application>
+</manifest>

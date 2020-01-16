@@ -1,0 +1,3 @@
+dependencies {
+    api (name:'idcard_ocr', ext:'aar')
+}

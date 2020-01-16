@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:scaleType="centerCrop"
+        android:src="@drawable/common_top_bg3" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="25dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_mefragment_card">
+
+        <TextView
+            android:id="@+id/hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/input_current_business_pwd" />
+
+        <include
+            layout="@layout/layout_input_pwd"
+            android:layout_height="@dimen/common_height"
+            android:layout_width="match_parent"
+            android:layout_below="@id/hint"
+            android:layout_margin="20dp" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_num_keyboard" />
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_breath"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/red_pressed"
+        android:gravity="center"
+        android:text="呼吸动画" />
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/red_pressed"
+        android:gravity="center"
+        android:text="888.88" />
+
+<!--    <com.airbnb.lottie.LottieAnimationView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        app:lottie_loop="true"-->
+<!--        app:lottie_fileName="animation.json"-->
+<!--        app:lottie_autoPlay="true"-->
+
+<!--        />-->
+
+    <com.robinhood.ticker.TickerView
+        android:id="@+id/tickerView"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        app:ticker_animationDuration="1500"
+        android:layout_height="50dp" />
+</LinearLayout>

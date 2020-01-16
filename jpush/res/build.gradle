@@ -1,0 +1,8 @@
+dependencies{
+    //极光推送
+    api 'cn.jiguang.sdk:jpush:3.3.2'  // 此处以JPush 3.3.2 版本为例。
+    api 'cn.jiguang.sdk:jcore:2.0.1' // 此处以JCore 2.0.1 版本为例。
+
+
+
+}

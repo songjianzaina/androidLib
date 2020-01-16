@@ -1,0 +1,3 @@
+dependencies {
+    implementation 'io.github.dltech21:idcard_ocr:1.1.3'
+}

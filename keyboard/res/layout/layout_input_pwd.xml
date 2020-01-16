@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/common_height"
+    android:orientation="horizontal"
+    android:divider="@drawable/common_divider_vertical"
+    android:showDividers="middle"
+    android:layout_gravity="center_horizontal"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/reset_pwd_bg">
+
+    <EditText
+        android:id="@+id/pwd1"
+        android:layout_width="@dimen/common_height"
+        android:layout_height="@dimen/common_height"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="center"
+        android:inputType="numberPassword"
+        android:maxLength="1"
+        android:textSize="@dimen/text_size_20sp"
+        android:focusable="false" />
+
+    <EditText
+        android:id="@+id/pwd2"
+        android:layout_width="@dimen/common_height"
+        android:layout_height="@dimen/common_height"
+        android:inputType="numberPassword"
+        android:textSize="@dimen/text_size_20sp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:maxLength="1"
+        android:background="@null"
+        android:focusable="false" />
+
+    <EditText
+        android:id="@+id/pwd3"
+        android:layout_width="@dimen/common_height"
+        android:layout_height="@dimen/common_height"
+        android:inputType="numberPassword"
+        android:textSize="@dimen/text_size_20sp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:maxLength="1"
+        android:background="@null"
+        android:focusable="false" />
+
+    <EditText
+        android:id="@+id/pwd4"
+        android:layout_width="@dimen/common_height"
+        android:layout_height="@dimen/common_height"
+        android:inputType="numberPassword"
+        android:textSize="@dimen/text_size_20sp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:maxLength="1"
+        android:background="@null"
+        android:focusable="false" />
+
+    <EditText
+        android:id="@+id/pwd5"
+        android:layout_width="@dimen/common_height"
+        android:layout_height="@dimen/common_height"
+        android:inputType="numberPassword"
+        android:textSize="@dimen/text_size_20sp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:maxLength="1"
+        android:background="@null"
+        android:focusable="false" />
+
+    <EditText
+        android:id="@+id/pwd6"
+        android:layout_width="@dimen/common_height"
+        android:layout_height="@dimen/common_height"
+        android:inputType="numberPassword"
+        android:textSize="@dimen/text_size_20sp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:maxLength="1"
+        android:background="@null"
+        android:focusable="false" />
+</LinearLayout>

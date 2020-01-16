@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/selector_gray_to_transparent"
+        android:hint="0.00"
+        android:inputType="numberSigned|numberDecimal"
+        android:paddingLeft="8dp"
+        android:textColor="#303030"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_vertical"
+                android:text="数量"
+                android:textColor="#303030"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_count"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_gray_to_transparent"
+                android:hint="0.00"
+                android:inputType="number"
+                android:paddingLeft="8dp"
+                android:tag="child"
+                android:textColor="#303030"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#e2e2e2" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_vertical"
+                android:text="名称"
+                android:textColor="#303030"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_gray_to_transparent"
+                android:hint="请输入名称"
+                android:paddingLeft="8dp"
+                android:tag="child"
+                android:textColor="#303030"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e2e2e2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_vertical"
+                android:text="运费"
+                android:textColor="#303030"
+                android:textSize="14sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_gray_to_transparent"
+                android:hint="0.00"
+                android:inputType="numberDecimal"
+                android:paddingLeft="8dp"
+                android:enabled="false"
+                android:tag="child"
+                android:text="8.12"
+                android:textColor="#303030"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#e2e2e2" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_vertical"
+                android:text="价格"
+                android:textColor="#303030"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_price"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_gray_to_transparent"
+                android:hint="0.00"
+                android:enabled="false"
+                android:inputType="numberSigned|numberDecimal"
+                android:paddingLeft="8dp"
+                android:tag="child"
+                android:textColor="#303030"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/selector_gray_to_transparent"
+        android:hint="0.00"
+        android:inputType="numberSigned|numberDecimal"
+        android:paddingLeft="8dp"
+        android:textColor="#303030"
+        android:textSize="14sp"
+        android:visibility="gone" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+android {
+    useLibrary 'org.apache.http.legacy'
+}
+
+dependencies {
+    implementation 'com.mcxiaoke.volley:library:1.0.19'
+    implementation(name: 'zzplatform_sdk', ext: 'aar')
+}

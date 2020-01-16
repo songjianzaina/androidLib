@@ -1,0 +1,4 @@
+dependencies {
+//轮播第三方库 https://github.com/LillteZheng/ViewPagerHelper
+    api 'com.github.LillteZheng:ViewPagerHelper:v1.3'
+}

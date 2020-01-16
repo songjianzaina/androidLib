@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_fragment_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhengsr.viewpagerlib.indicator.TabIndicator
+        android:id="@+id/tri_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@color/black_ff"
+        app:tab_color="@color/white"
+        app:tab_height="5dp"
+        app:tab_show="true"
+        app:tab_text_change_color="@color/white"
+        app:tab_text_default_color="@color/white_ff"
+        app:tab_text_type="normaltext"
+        app:tab_textsize="16sp"
+        app:tab_width="25dp"
+        android:visibility="gone"
+        app:tap_type="tri"
+        app:visiabel_size="3"></com.zhengsr.viewpagerlib.indicator.TabIndicator>
+
+    <com.zhengsr.viewpagerlib.indicator.TabIndicator
+        android:id="@+id/rect_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/gray_cccc"
+        app:tab_color="@color/colorAccent"
+        app:tab_height="2dp"
+        app:tab_iscanscroll="true"
+        android:visibility="gone"
+        app:tab_show="true"
+        app:tab_text_change_color="@color/colorAccent"
+        app:tab_text_default_color="@color/black_ff"
+        app:tab_text_type="normaltext"
+        app:tab_textsize="16sp"
+        app:tab_width="50dp"
+        app:tap_type="rect"
+        app:visiabel_size="3" />
+
+    <com.zhengsr.viewpagerlib.indicator.TabIndicator
+        android:id="@+id/shade_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/gray_cccc"
+        app:tab_color="@color/colorAccent"
+        app:tab_width="50dp"
+        android:visibility="gone"
+        app:tab_height="2dp"
+        app:tab_text_default_color="@color/black_ff"
+        app:tab_text_change_color="@color/colorAccent"
+        app:tab_show="false"
+        app:tab_text_type="colortext"
+        app:tab_textsize="16sp"
+        app:visiabel_size="4"
+        >
+    </com.zhengsr.viewpagerlib.indicator.TabIndicator>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_cccc" />
+
+
+</LinearLayout>

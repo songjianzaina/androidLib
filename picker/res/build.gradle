@@ -1,0 +1,7 @@
+dependencies {
+    implementation 'com.alibaba:fastjson:1.1.56.android'
+    implementation 'com.github.florent37:viewanimator:1.0.5'
+    api ('com.github.addappcn:android-pickers:1.0.3') {
+        exclude group: 'com.android.support', module: 'support-v4'
+    }
+}

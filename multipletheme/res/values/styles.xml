@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme" tools:ignore="ResourceName">
+        <!-- Customize your theme here. -->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    </style>
+    <!--默认主题-->
+    <style name="theme_default">
+<!--        <item name="module_me_bg">@mipmap/common_top_bg1</item>-->
+<!--        <item name="title_small_bg">@mipmap/common_top_bg3</item>-->
+<!--        <item name="title_middle_bg">@mipmap/common_top_bg2</item>-->
+<!--        <item name="earnmoney_bg">@mipmap/earnmoney_bg</item>-->
+        <item name="button_active_bg">#598cf7</item>
+    </style>
+    <!--中付云主题-->
+    <style name="theme_2">
+<!--        <item name="module_me_bg">@mipmap/earnmoney_bg</item>-->
+<!--        <item name="title_small_bg">@mipmap/earnmoney_bg</item>-->
+<!--        <item name="title_middle_bg">@mipmap/earnmoney_bg</item>-->
+        <item name="earnmoney_bg">@mipmap/ic_launcher</item>
+        <item name="button_active_bg">#598c55</item>
+    </style>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="status_layout_manager_background_color">#fff5f7f9</color>
+    <color name="status_layout_manager_tip_text_color">#BFBFBF</color>
+    <color name="status_layout_manager_click_view_text_color">#39ceff</color>
+</resources>

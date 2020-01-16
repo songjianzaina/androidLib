@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="fill_parent"
+    n1:layout_height="wrap_content"
+    n1:background="@color/white">
+
+    <RelativeLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="49.0dip">
+
+        <ImageView
+            n1:id="@+id/tv_web_back"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_centerVertical="true"
+            n1:layout_marginLeft="12.0dip"
+            n1:padding="10.0dip"
+            n1:src="@drawable/nav_back" />
+
+        <ImageView
+            n1:id="@+id/tv_close"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_centerVertical="true"
+            n1:layout_marginLeft="10.0dip"
+            n1:layout_toRightOf="@+id/tv_web_back"
+            n1:padding="10.0dip"
+            n1:src="@drawable/nav_close"
+            n1:visibility="visible" />
+
+        <TextView
+            n1:id="@+id/tv_title"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_centerHorizontal="true"
+            n1:layout_centerVertical="true"
+            n1:layout_marginLeft="30.0dip"
+            n1:maxEms="10"
+            n1:padding="5.0dip"
+            n1:singleLine="true"
+            n1:text=""
+            n1:textColor="#ff262a33"
+            n1:textSize="17.0sp" />
+
+        <TextView
+            n1:id="@+id/tv_share"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_alignParentRight="true"
+            n1:layout_centerVertical="true"
+            n1:layout_marginRight="16.0dip"
+            n1:drawableRight="@drawable/share_icon"
+            n1:padding="5.0dip"
+            n1:text="" />
+    </RelativeLayout>
+</LinearLayout>

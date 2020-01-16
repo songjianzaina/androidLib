@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:divider="@drawable/common_divider_horizontal"
+    android:showDividers="middle"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_height"
+        android:orientation="horizontal"
+        android:divider="@drawable/common_divider_vertical"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/number1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_30sp"
+            android:layout_weight="1"
+            android:text="1"
+            android:textColor="@color/common_dark"
+            android:background="@drawable/pwd_item_bg" />
+
+        <TextView
+            android:id="@+id/number2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_30sp"
+            android:background="@drawable/pwd_item_bg"
+            android:layout_weight="1"
+            android:textColor="@color/common_dark"
+            android:text="2" />
+
+        <TextView
+            android:id="@+id/number3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_30sp"
+            android:background="@drawable/pwd_item_bg"
+            android:layout_weight="1"
+            android:textColor="@color/common_dark"
+            android:text="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_height"
+        android:orientation="horizontal"
+        android:divider="@drawable/common_divider_vertical"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/number4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_30sp"
+            android:background="@drawable/pwd_item_bg"
+            android:layout_weight="1"
+            android:textColor="@color/common_dark"
+            android:text="4" />
+
+        <TextView
+            android:id="@+id/number5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/pwd_item_bg"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_30sp"
+            android:layout_weight="1"
+            android:textColor="@color/common_dark"
+            android:text="5" />
+
+        <TextView
+            android:id="@+id/number6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_30sp"
+            android:background="@drawable/pwd_item_bg"
+            android:layout_weight="1"
+            android:textColor="@color/common_dark"
+            android:text="6" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_height"
+        android:orientation="horizontal"
+        android:divider="@drawable/common_divider_vertical"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/number7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_30sp"
+            android:background="@drawable/pwd_item_bg"
+            android:layout_weight="1"
+            android:textColor="@color/common_dark"
+            android:text="7" />
+
+        <TextView
+            android:id="@+id/number8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/pwd_item_bg"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_30sp"
+            android:layout_weight="1"
+            android:textColor="@color/common_dark"
+            android:text="8" />
+
+        <TextView
+            android:id="@+id/number9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_30sp"
+            android:background="@drawable/pwd_item_bg"
+            android:layout_weight="1"
+            android:textColor="@color/common_dark"
+            android:text="9" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_height"
+        android:divider="@drawable/common_divider_vertical"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffDBD4CC" />
+
+        <TextView
+            android:id="@+id/number0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/pwd_item_bg"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/common_dark"
+            android:textSize="@dimen/text_size_30sp" />
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/pwd_delete_bg"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/edit_delete_selector"
+            android:text="9" />
+    </LinearLayout>
+</LinearLayout>

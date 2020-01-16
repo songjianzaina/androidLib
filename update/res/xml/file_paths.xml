@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <root-path
+        name="root"
+        path="" />
+    <external-path
+        name="files_root"
+        path="Android/data/${applicationId}/" />
+    <external-path
+        name="external_storage_root"
+        path="." />
+
+
+    <!--以下是广点通sdk中的冲突内容部分-->
+    <!-- 这个下载路径不可以修改，必须是GDTDOWNLOAD //物理路径相当于Environment.getExternalStorageDirectory() + /GDTDOWNLOAD/-->
+    <external-path
+        name="gdt_sdk_download_path"
+        path="GDTDOWNLOAD" />
+
+    <!--为了适配所有路径可以设置 path = "."   //物理路径相当于**Context.getExternalFilesDir(String) **+ /Download/。-->
+    <external-files-path
+        name="external_files_path"
+        path="Download" />。
+
+
+    <!--物理路径相当于Context.getFilesDir() + /path/。-->
+    <files-path
+        name="name"
+        path="path" />
+
+    <!--物理路径相当于Context.getCacheDir() + /path/。-->
+    <cache-path
+        name="name"
+        path="." />
+
+    <!--物理路径相当于Environment.getExternalStorageDirectory() + /path/。-->
+    <!--<external-path-->
+        <!--name="name"-->
+        <!--path="." />-->
+
+    <!--物理路径相当于**Context.getExternalFilesDir(String) **+ /path/。-->
+    <!--<external-files-path-->
+        <!--name="name"-->
+        <!--path="." />-->
+
+    <!--物理路径相当于Context.getExternalCacheDir() + /path/。-->
+    <external-cache-path
+        name="name"
+        path="." />
+
+
+</paths>

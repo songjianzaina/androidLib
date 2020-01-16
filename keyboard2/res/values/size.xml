@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_key_width">8.68%</dimen>
+    <!-- width + (abc_horizontal_gap_a - abc_horizontal_gap) -->
+    <dimen name="abc_key_width_caps">13.62%</dimen>
+    <dimen name="abc_key_width_num">23.5%</dimen>
+    <dimen name="abc_key_width_space">48.2%</dimen>
+    <dimen name="abc_key_height">7.5%</dimen>
+    <dimen name="abc_horizontal_gap">1.2%</dimen>
+    <!-- width / 2 + horizontalGap * 1.5 -->
+    <dimen name="abc_horizontal_gap_a">6.14%</dimen>
+    <dimen name="abc_vertical_gap">1.4%</dimen>
+
+    <dimen name="number_key_width">22.75%</dimen>
+    <!-- (number_key_width - number_horizontal_gap) / 2 -->
+    <dimen name="number_key_width_abc">10.475%</dimen>
+    <dimen name="number_key_height">7.5%</dimen>
+    <dimen name="number_key_height_double">16.4%</dimen>
+    <dimen name="number_horizontal_gap">1.8%</dimen>
+    <dimen name="number_vertical_gap">1.4%</dimen>
+</resources>

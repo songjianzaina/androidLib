@@ -1,0 +1,5 @@
+dependencies{
+    //一个简约性感的数字progressBar
+    implementation rootProject.ext.dependencies.numberprogressbar
+
+}

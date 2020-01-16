@@ -1,0 +1,41 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.insworks.lib_drop_menu.DropDownMenuView
+        android:id="@+id/dropDownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!-- 第一个布局是顶部layout -->
+        <TextView
+            android:id="@+id/view_top"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="点击弹出条件筛选框"
+            android:textColor="@android:color/white"
+         />
+        <!-- 第二个布局是筛选条件的layout -->
+        <TextView
+            android:id="@+id/view_menu"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/view_top"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:text="具体筛选条件的布局"
+            android:textColor="@android:color/white" />
+
+    </com.insworks.lib_drop_menu.DropDownMenuView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:onClick="open"
+        android:text="点击" />
+</FrameLayout>

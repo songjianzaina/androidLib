@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/common_top_bg3" />
+
+    <com.inswork.lib_cloudbase.titlebar.CloudpayTitleBar
+
+        android:id="@+id/tb_quick_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:title="选择银行">
+
+    </com.inswork.lib_cloudbase.titlebar.CloudpayTitleBar>
+    <!--indexbar自带标题栏-->
+    <!--<include -->
+        <!--android:id="@+id/tb_quick_title"-->
+        <!--layout="@layout/view_common_titlebar"-->
+        <!--/>-->
+
+    <RelativeLayout
+        android:layout_below="@+id/tb_quick_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:divider="#EEEEEE"
+        android:layout_height="match_parent" >
+    </ListView>
+
+    <com.inswork.indexbar.bank.QuickIndexBar
+        android:id="@+id/quickIndexBar"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+         />
+
+    <TextView
+        android:id="@+id/currentIndex"
+        android:layout_width="120dp"
+        android:layout_height="106dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_index"
+        android:gravity="center"
+        android:text="A"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:visibility="gone" />
+
+    </RelativeLayout>
+</RelativeLayout>
