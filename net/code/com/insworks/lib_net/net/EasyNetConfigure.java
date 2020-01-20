@@ -39,6 +39,7 @@ public class EasyNetConfigure {
     private boolean isPrintLog = true;
     private static Application mApplication;
     private String host;
+    private String imageHost;
 
     public static EasyNetConfigure getInstance(Application app) {
         mApplication = app;
@@ -191,6 +192,13 @@ public class EasyNetConfigure {
             LogUtil.setIsPrintLog(true);
         }
     }
+    // 读取AndroidManifest里面配置的主机地址
+    public String readImageHost() {
+        if (imageHost == null) {
 
+            imageHost = MetaDataUtil.readImageHost(mApplication);
+        }
+        return imageHost;
+    }
 
 }

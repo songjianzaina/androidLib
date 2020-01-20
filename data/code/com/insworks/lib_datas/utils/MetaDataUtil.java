@@ -46,6 +46,18 @@ public class MetaDataUtil {
         return getAppInfoBundle(context).getInt("QQ_APPID", 0);
     }
 
+
+    /**
+     * 获取清单文件中splash
+     *
+     * @param context
+     * @param
+     * @return
+     */
+    public static int readSplashPic(Context context) {
+        return getAppInfoBundle(context).getInt("SPLASH", R.mipmap.ic_launcher);
+    }
+
     /**
      * 获取清单文件中QQAPPKEY 长串的
      *
@@ -77,6 +89,10 @@ public class MetaDataUtil {
      */
     public static String readHost(Context context) {
         return getAppInfoBundle(context).getString("Host", "");
+    }
+
+    public static String readImageHost(Context context) {
+        return getAppInfoBundle(context).getString("Image_Host", "");
     }
 
     /**
@@ -123,6 +139,10 @@ public class MetaDataUtil {
         return getAppInfoBundle(context).getString("UMENG_SHARE_KEY", "");
     }
 
+    public static int readLoginLogo(Context context) {
+        return getAppInfoBundle(context).getInt("LOGIN_LOGO", R.mipmap.ic_launcher);
+    }
+
     /**
      * 获取applogo
      *
@@ -134,7 +154,7 @@ public class MetaDataUtil {
     }
 
     private static Bundle getAppInfoBundle(Context context) {
-    //注意：这里ApplicationInfo不能直接 CommonApplication.mApplication.getApplicationInfo()这样获取，否则会获取不到meta_data的
+        //注意：这里ApplicationInfo不能直接 CommonApplication.mApplication.getApplicationInfo()这样获取，否则会获取不到meta_data的
         ApplicationInfo applicationInfo = getAppInfo(context);
         if (applicationInfo != null) {
             return applicationInfo.metaData;
@@ -155,5 +175,6 @@ public class MetaDataUtil {
         }
         return applicationInfo;
     }
+
 
 }

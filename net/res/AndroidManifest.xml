@@ -1,2 +1,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <meta-data
+            android:name="environment"
+            android:value="dev" />
+        <meta-data
+            android:name="Host"
+            android:value="${Host}" />
+        <meta-data
+            android:name="Image_Host"
+            android:value="${Image_Host}" />
+    </application>
 </manifest>
