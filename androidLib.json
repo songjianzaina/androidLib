@@ -15,7 +15,7 @@
     "control": "控制库",
     "statusllayout": "statusllayout库",
     "radiusview": "圆角控件库",
-
+    "dropmenu": "下拉菜单库",
     "picker": "选择器库"
   }
 }
@@ -50,5 +50,5 @@
 "bankscanner": "银行卡扫描库",
 "banktype": "根据银行卡号识别所属银行",
 "cleartext": "输入清除控件库",
-"dropmenu": "下拉菜单库",
+
 "indexbar": "indexbar库"
