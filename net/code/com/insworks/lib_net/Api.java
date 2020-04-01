@@ -10,13 +10,13 @@ public abstract class Api {
     //本地环境
     private static final String HOST_LOCAL = "http://t.weather.sojson.com/api/";//天气查询接口 用于网络框架测试
     //开发环境
-    private static final String HOST_DEV = "http://api.yoelian.cn/api.php/";
+    private static final String HOST_DEV = "https://tdapi.qtopays.cn/api/";
     //测试环境
     private static final String HOST_TEST = "";
     //模拟环境
     private static final String HOST_STAGING = "";
     //线上环境(生产环境)
-    private static final String HOST_ONLINE = "http://api.yoelian.cn/api.php/";
+    private static final String HOST_ONLINE = "https://tdapi.qtopays.cn/api/";
     //cloud专用
     public static final String IMAGE_URL = "http://cnpay.yoelian.cn/data/upload/";
 

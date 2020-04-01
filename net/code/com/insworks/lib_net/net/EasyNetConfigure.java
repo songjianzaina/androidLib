@@ -104,7 +104,9 @@ public class EasyNetConfigure {
         headers.put("User-Agent", SystemInfoUtils.getUserAgent(app, AppConstant.APPID));
         //###########################新中付定制请求头参数################################
         //app 版本号
-        headers.put("yun-api-version", AppTools.getVersionName(app));
+        headers.put("yun-app-version", AppTools.getVersionName(app));
+
+        headers.put("superSign-Agent","zvjPc3PRcoIMrLQxphZ1oSHH0gpz3G9M");
         //设备类型
         headers.put("yun-device-type", "android");
         //token值 首次登陆可传空

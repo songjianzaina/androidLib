@@ -49,7 +49,7 @@ public class QtpayNet {
         requesType = type;
         this.service = service;
         if (type == "post") {
-            postRequest = EasyHttp.post("dxapi");
+            postRequest = EasyHttp.post("Dxapi");
 
             userParams = new TreeMap<>();
         }
@@ -83,7 +83,7 @@ public class QtpayNet {
      */
     private TreeMap<String, String> getParam(String service, String encryptData) {
         TreeMap<String, String> params = new TreeMap<>();
-        String companyNo = "19001";
+        String companyNo = "20001";
         String nonceStr = getGUID();
 
         //##################signData参数拼接####################
@@ -95,7 +95,7 @@ public class QtpayNet {
         md5Data.append("&nonceStr=" + nonceStr);
         //变量
         md5Data.append("&service=" + service);
-        md5Data.append("&yun-api-version=" + AppTools.getVersionName(EasyNetConfigure.getApplication()));
+        md5Data.append("&yun-app-version=" + AppTools.getVersionName(EasyNetConfigure.getApplication()));
         md5Data.append("&yun-device-type=android");
         if (UserManager.getInstance().hasUserInfo()) {
 
@@ -110,7 +110,7 @@ public class QtpayNet {
             postRequest.headers(httpHeaders);
         }
         md5Data.append("&key=mf1OrGubnatYgsOy0aYIRj3GSBFDCDu0");
-        LogUtil.d("MD5拼接: " + md5Data.toString());
+        LogUtil.d("postObject请求 MD5拼接: " , md5Data.toString());
         String hexMD5 = MD5.computeMd5HexString(md5Data.toString()).toUpperCase();
         String hexMD52 = MD5.computeMd5HexString("companyNo=19001&encryptData=vAwqWdZQb7NWyLcrVluGwwlZjCKnXMvgrtbW57bBsPSMz8Q5jGcAOYzBfhtI7U2f&nonceStr=39C6ba4v1PIM7mm2&service=Login.Quickin&yun-api-version=1.0.2&yun-device-type=android&&key=mf1OrGubnatYgsOy0aYIRj3GSBFDCDu0").toUpperCase();
 
@@ -249,7 +249,8 @@ public class QtpayNet {
 //                    cloudCallBack.onCompleted(responseBean.getMsg());
                 } else if (code.equals("09")) {
                     //成功 明文结果 无需解密
-                    cloudCallBack.onSuccess(responseBean.getEncryptData());
+                    LogUtil.json("Post请求成功  EncryptData: ", responseBean.getEncryptData());
+                    cloudCallBack.onSuccess(JsonUtil.jsonToBean(responseBean.getEncryptData(), cloudCallBack.getType()));
 
                 } else if (code.equals("01")) {
                     //成功，可解密加密域值。进行业务流程
@@ -292,7 +293,7 @@ public class QtpayNet {
                 } else {
                     //94 服务类型错误 95 系统内部错误 96当前服务不可用 97验签失败 98加密数据异常 99缺少参数
                     Toast.makeText(EasyNetConfigure.getApplication(), responseBean.getMsg() + " 请求错误", Toast.LENGTH_SHORT).show();
-                    UserManager.getInstance().logout();
+//                    UserManager.getInstance().logout();
 
                 }
 

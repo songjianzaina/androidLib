@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.text.TextUtils;
 
 import com.google.gson.reflect.TypeToken;
 import com.insworks.lib_datas.EasyData;
@@ -15,6 +14,7 @@ import com.insworks.lib_datas.utils.ActivityManager;
 import com.insworks.lib_datas.utils.JsonUtil;
 import com.insworks.lib_log.LogUtil;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -109,12 +109,21 @@ public class UserManager {
         return EasyData.getApplication().getSharedPreferences("guide", Context.MODE_PRIVATE);
     }
 
-
     /**
+     * 获取历史记录表
+     *
+     * @return
+     */
+    private SharedPreferences getHistoryPreferences() {
+        return EasyData.getApplication().getSharedPreferences("history", Context.MODE_PRIVATE);
+    }
+
+    /*
+     *//**
      * 更新用户信息
      *
      * @param json
-     */
+     *//*
     public void updateUserInfo(String json) {
         if (TextUtils.isEmpty(json)) {
             return;
@@ -126,6 +135,8 @@ public class UserManager {
     }
 
 
+    */
+
     /**
      * 更新用户信息
      *
@@ -136,8 +147,9 @@ public class UserManager {
             return;
         }
         //另外保存一份token
-        setToken(userInfo.getToken());
+        setToken(userInfo.token);
         //另外保存一份手机号 用于登录
+/*
         setLoginUsername(userInfo.getUsername());
         if (userInfo.getRealname().equals("Y")) {
             //是否实名认证
@@ -160,6 +172,7 @@ public class UserManager {
 
             setBindBankCard(false);
         }
+*/
 
         userInfoBean = userInfo;
         String json = JsonUtil.beanToJson(userInfo);
@@ -238,7 +251,6 @@ public class UserManager {
     }
 
 
-
     /**
      * 清除token 值
      *
@@ -246,6 +258,16 @@ public class UserManager {
      */
     public void clearToken() {
         getTokenPreferences().edit().clear().apply();
+    }
+
+    /**
+     * 清除历史记录 值
+     *
+     * @return
+     */
+    public void clearHistory() {
+        historyDatas = null;
+        getHistoryPreferences().edit().clear().apply();
     }
 
     /**
@@ -279,6 +301,8 @@ public class UserManager {
     public void clearUserInfo() {
         userInfoBean = null;
         getUserPreferences().edit().clear().apply();
+
+        clearHistory();
     }
 
 
@@ -476,19 +500,23 @@ public class UserManager {
         getUserPreferences().edit().putBoolean(IS_BIND_BANK_CARD, isbindbankcard).apply();
     }
 
+    /*
+     */
+
     /**
      * 获取用户手机号
      *
      * @return
-     */
+     *//*
+
     public String getUserPhone() {
         if (null == userInfoBean) {
             readUserInfo();
         }
-        return userInfoBean == null ? null : userInfoBean.getUsername();
+        return userInfoBean == null ? null : userInfoBean.u();
     }
 
-
+*/
     public void setBigPosIsSuccess(boolean bigPosIsBean) {
     }
 
@@ -506,7 +534,7 @@ public class UserManager {
         }
         this.historyDatas = searchHistoryDatas;
         String json = JsonUtil.beanToJson(searchHistoryDatas);
-        getUserPreferences().edit().putString(SEARCH_HISTORY, json).apply();
+        getHistoryPreferences().edit().putString(SEARCH_HISTORY, json).apply();
     }
 
     /**
@@ -516,15 +544,27 @@ public class UserManager {
      */
     public List<String> getSearchHistory() {
         if (null == historyDatas) {
-            String json = getUserPreferences().getString(SEARCH_HISTORY, null);
+            String json = getHistoryPreferences().getString(SEARCH_HISTORY, null);
             if (json == null) {
-                return null;
+                setSearchHistory(new ArrayList<>());
+                return historyDatas;
             }
 
             historyDatas = JsonUtil.jsonToBean(json, new TypeToken<List<String>>() {
             }.getType());
         }
         return historyDatas;
+    }
+
+    /**
+     * 添加单个历史
+     *
+     * @return
+     */
+    public void addSearchHistory(String one) {
+        List<String> searchList = getSearchHistory();
+        searchList.add(0, one);
+        setSearchHistory(searchList);
     }
 
     /**
@@ -582,7 +622,6 @@ public class UserManager {
         }
         return shareInfo;
     }
-
 
 
 }

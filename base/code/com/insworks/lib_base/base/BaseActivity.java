@@ -17,6 +17,7 @@ import com.insworks.lib_base.utils.ActivityUtil;
 import com.insworks.lib_base.utils.BroadcastUtil;
 import com.insworks.lib_base.utils.SystemBarTintManager;
 import com.insworks.lib_base.utils.ToastUtil;
+import com.trello.rxlifecycle3.components.support.RxAppCompatActivity;
 
 import java.util.Random;
 
@@ -24,7 +25,7 @@ import java.util.Random;
 /**
  * activity基类 Created by Robin on 15/6/27.
  */
-public abstract class BaseActivity extends AppCompatActivity implements OnClickListener {
+public abstract class BaseActivity extends RxAppCompatActivity implements OnClickListener {
     public Context mContext;
     protected SystemBarTintManager tintManager;
 

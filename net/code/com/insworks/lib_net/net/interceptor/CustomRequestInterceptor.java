@@ -151,7 +151,7 @@ public class CustomRequestInterceptor extends BaseDynamicInterceptor<CustomReque
     private void setPhoneAndVoucher(TreeMap<String, String> params) {
         //检查是否登陆 如果用户已经登陆 那么将用户信息传至后台 否则退出重新登录
         if (UserManager.getInstance().hasUserInfo()) {
-            params.put("tel", UserManager.getInstance().getUserPhone());
+//            params.put("tel", UserManager.getInstance().getUserPhone());
 //            params.put("voucher", UserManager.getInstance().getVoucher());
         } else {
             UserManager.getInstance().logout();

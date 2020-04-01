@@ -1,6 +1,7 @@
 package com.insworks.lib_base.base;
 
 import android.app.Activity;
+
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,6 +18,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
 
+
+import com.trello.rxlifecycle3.components.support.RxFragment;
+
 import java.lang.reflect.Field;
 import java.util.Random;
 
@@ -26,7 +30,7 @@ import java.util.Random;
  * time   : 2018/10/18
  * desc   : Fragment 懒加载基类
  */
-public abstract class BaseLazyFragment extends Fragment implements View.OnClickListener {
+public abstract class BaseLazyFragment extends RxFragment implements View.OnClickListener {
 
     // Activity对象
     public FragmentActivity mActivity;
@@ -179,7 +183,7 @@ public abstract class BaseLazyFragment extends Fragment implements View.OnClickL
         // 从可见的状态变成不可见状态，再从不可见状态变成可见状态时回调
     }
 
-    @Override
+/*    @Override
     public void onDetach() {
         super.onDetach();
         //解决java.lang.IllegalStateException: Activity has been destroyed 的错误
@@ -192,7 +196,7 @@ public abstract class BaseLazyFragment extends Fragment implements View.OnClickL
         } catch (IllegalAccessException e) {
             throw new RuntimeException(e);
         }
-    }
+    }*/
 
     protected void initFragment() {
         initView();
