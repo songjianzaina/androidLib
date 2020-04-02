@@ -68,7 +68,7 @@ public class UserManager {
      *
      * @return
      */
-    private SharedPreferences getUserPreferences() {
+    public SharedPreferences getUserPreferences() {
         return EasyData.getApplication().getSharedPreferences("info", Context.MODE_PRIVATE);
     }
 
@@ -605,6 +605,8 @@ public class UserManager {
         String json = JsonUtil.beanToJson(shareInfoBean);
         getUserPreferences().edit().putString(SHARE_INFO, json).apply();
     }
+
+
 
     /**
      * 获取分享信息

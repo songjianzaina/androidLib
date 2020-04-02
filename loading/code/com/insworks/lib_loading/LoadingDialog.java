@@ -33,8 +33,8 @@ public class LoadingDialog extends Dialog {
         //大版面样式
 //        setContentView(R.layout.lib_loading_loading);
 //        styleTwo();
-//        styleThree();
-        styleFour();
+        styleThree();
+//        styleFour();
         setCanceledOnTouchOutside(false);
     }
 
