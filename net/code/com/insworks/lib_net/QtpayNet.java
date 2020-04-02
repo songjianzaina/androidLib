@@ -189,14 +189,13 @@ public class QtpayNet {
         postRequest.execute(new SimpleCallBack<String>() {
             @Override
             public void onStart() {
-                //显示加载对话框
-                LoadingUtil.init(ActivityManager.getInstance().getCurrentActivity()).show();
+                cloudCallBack.onStart();
+
             }
 
             @Override
             public void onCompleted() {
-                //关闭加载对话框
-                LoadingUtil.init(ActivityManager.getInstance().getCurrentActivity()).dismiss();
+                cloudCallBack.onCompleted(null);
 
             }
 

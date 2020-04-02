@@ -9,7 +9,6 @@ import androidx.annotation.IdRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 
 import android.view.KeyEvent;
@@ -21,7 +20,6 @@ import android.view.ViewParent;
 
 import com.trello.rxlifecycle3.components.support.RxFragment;
 
-import java.lang.reflect.Field;
 import java.util.Random;
 
 /**

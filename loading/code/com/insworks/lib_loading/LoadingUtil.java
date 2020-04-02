@@ -66,9 +66,7 @@ public class LoadingUtil {
             mclassName = activity.getComponentName().getClassName();
         }
         mActivity = activity;
-
         return dialog;
     }
-
 
 }

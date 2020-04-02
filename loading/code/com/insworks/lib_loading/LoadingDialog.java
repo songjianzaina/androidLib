@@ -33,7 +33,8 @@ public class LoadingDialog extends Dialog {
         //大版面样式
 //        setContentView(R.layout.lib_loading_loading);
 //        styleTwo();
-        styleThree();
+//        styleThree();
+        styleFour();
         setCanceledOnTouchOutside(false);
     }
 
@@ -43,6 +44,14 @@ public class LoadingDialog extends Dialog {
     private void styleThree() {
         setContentView(R.layout.lib_loading_loading3);
         tv_text = (TextView) findViewById(R.id.tv_text);
+
+    }
+
+    /**
+     * 单纯原型旋转
+     */
+    private void styleFour() {
+        setContentView(R.layout.lib_loading_loading4);
 
     }
 

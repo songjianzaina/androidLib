@@ -1,5 +1,7 @@
 package com.insworks.lib_net.net.interceptor;
 
+import com.insworks.lib_datas.utils.ActivityManager;
+import com.insworks.lib_loading.LoadingUtil;
 import com.zhouyou.http.exception.ApiException;
 import com.zhouyou.http.utils.Utils;
 
@@ -35,11 +37,13 @@ public abstract class CloudCallBack<T>  {
     }
 
     public void onStart() {
-
+        //显示加载对话框
+        LoadingUtil.init(ActivityManager.getInstance().getCurrentActivity()).show();
     }
 
     public void onCompleted(String msg) {
-
+        //关闭加载对话框
+        LoadingUtil.init(ActivityManager.getInstance().getCurrentActivity()).dismiss();
     }
 
     /**
