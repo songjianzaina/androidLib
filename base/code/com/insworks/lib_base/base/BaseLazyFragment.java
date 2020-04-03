@@ -65,7 +65,7 @@ public abstract class BaseLazyFragment extends RxFragment implements View.OnClic
             mRootView = inflater.inflate(getLayoutId(), null);
         }
 
-        removeView(mRootView);
+        removeParentView(mRootView);
         return mRootView;
     }
 
@@ -73,7 +73,7 @@ public abstract class BaseLazyFragment extends RxFragment implements View.OnClic
      * 让爹移除自己
      * @param view
      */
-    protected void removeView(View view) {
+    protected void removeParentView(View view) {
         if (view == null) {
             return;
         }
