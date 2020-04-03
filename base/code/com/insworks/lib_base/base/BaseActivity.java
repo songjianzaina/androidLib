@@ -9,6 +9,7 @@ import androidx.annotation.Nullable;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.view.ViewParent;
 import android.view.inputmethod.InputMethodManager;
 
 import com.inswork.lib_cloudbase.R;
@@ -155,6 +156,22 @@ public abstract class BaseActivity extends RxAppCompatActivity implements OnClic
     public void finish() {
         hideSoftKeyboard();
         super.finish();
+    }
+    /**
+     * 让爹移除自己
+     * @param view
+     */
+    protected void removeParentView(View view) {
+        if (view == null) {
+            return;
+        }
+        //先找到爹，通过爹删除孩子
+        ViewParent parent = view.getParent();
+        //所有控件都有爹，爹一般就是ViewGroup
+        if (parent instanceof ViewGroup && parent != null) {
+            ViewGroup viewgroup = (ViewGroup) parent;
+            viewgroup.removeView(view);
+        }
     }
 
     /**
