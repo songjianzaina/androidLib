@@ -57,6 +57,7 @@ public class BaseFragmentAdapter<F extends Fragment> extends FragmentPagerAdapte
         mFragmentSet.add(fragment);
     }
 
+
     /**
      * 获取Fragment集合
      */
