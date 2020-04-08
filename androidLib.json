@@ -16,13 +16,15 @@
     "statusllayout": "statusllayout库",
     "radiusview": "圆角控件库",
     "dropmenu": "下拉菜单库",
-    "picker": "选择器库"
+    "picker": "选择器库",
+
   }
 }
 
 "anim": "动画库",
 "chart": "图标库",
 "newguide": "新手引导库",
+"imageoption": "图片操作库"
 "multipletheme": "主题切换库",
 "wetpay": "微信支付库",
 "alipay": "阿里支付库",
@@ -38,7 +40,7 @@
 "hook": "自定义hook库",
 "ocrbaidu": "百度ocr库",
 "ocrali": "阿里ocr库",
-"imageoption": "图片操作库",
+
 "statusbar": "状态栏工具库",
 "richtext": "富文本操作库",
 

@@ -41,10 +41,9 @@ public class RoundImageView extends AppCompatImageView {
         rids[1] = mRadius;
         rids[2] = mRadius;
         rids[3] = mRadius;
-        rids[4] = 0f;
-        rids[5] = 0f;
-        rids[6] = 0f;
-        rids[7] = 0f;
+        rids[4] = mRadius;
+        rids[5] = mRadius;
+        rids[7] = mRadius;
         array.recycle();
         mPath = new Path();
         paintFlagsDrawFilter = new PaintFlagsDrawFilter(0, Paint.ANTI_ALIAS_FLAG | Paint.FILTER_BITMAP_FLAG);

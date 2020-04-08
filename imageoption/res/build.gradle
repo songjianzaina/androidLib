@@ -1,6 +1,7 @@
 dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
     //第三方图片压缩库
-    implementation 'com.github.nanchen2251:CompressHelper:1.0.5'
+    api 'com.github.nanchen2251:CompressHelper:1.0.5'
 
     api project(path: ':thirdparty:imagepicker')
 }
