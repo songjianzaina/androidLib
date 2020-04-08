@@ -19,7 +19,13 @@
         <attr name="button_click_selector" format="reference"></attr>
     </declare-styleable>
     <declare-styleable name="RoundImageView">
-        <attr name="radius" format="reference|dimension" />
+        <attr name="radius_all" format="dimension" />
+        <attr name="radius_left_top" format="dimension" />
+        <attr name="radius_left_bottom" format="dimension" />
+        <attr name="radius_right_top" format="dimension" />
+        <attr name="radius_right_bottom" format="dimension" />
+        <attr name="round_stroke_width" format="dimension" />
+        <attr name="round_stroke_color" format="reference|color" />
     </declare-styleable>
 
     <declare-styleable name="DrawableTextView">

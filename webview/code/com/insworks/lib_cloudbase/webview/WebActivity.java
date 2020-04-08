@@ -12,8 +12,6 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebResourceError;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -21,7 +19,6 @@ import com.inswork.lib_cloudbase.R;
 import com.inswork.lib_cloudbase.base.UIActivity;
 import com.inswork.lib_cloudbase.event.Event;
 import com.inswork.lib_cloudbase.utils.SystemUtils;
-import com.insworks.widget.RoundImageView;
 import com.insworks.lib_log.LogUtil;
 
 /**
