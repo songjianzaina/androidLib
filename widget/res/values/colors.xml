@@ -1,0 +1,5 @@
+<resources>
+    <color name="switch_bg">#00d9d3</color>
+    <color name="light_gray">#cccccc</color>
+    <color name="common_pressed">#f7f7f7</color>
+</resources>

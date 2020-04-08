@@ -62,4 +62,55 @@
         <!--背景颜色-->
         <attr name="backgroundColor" format="reference|color" />
     </declare-styleable>
+    <declare-styleable name="SwitchButton" tools:ignore="ResourceName">
+        <attr name="kswThumbDrawable" format="reference" />
+        <attr name="kswThumbColor" format="color|reference" />
+        <attr name="kswThumbMargin" format="dimension|reference" />
+        <attr name="kswThumbMarginTop" format="dimension|reference" />
+        <attr name="kswThumbMarginBottom" format="dimension|reference" />
+        <attr name="kswThumbMarginLeft" format="dimension|reference" />
+        <attr name="kswThumbMarginRight" format="dimension|reference" />
+        <attr name="kswThumbWidth" format="dimension|reference" />
+        <attr name="kswThumbHeight" format="dimension|reference" />
+        <attr name="kswThumbRadius" format="dimension|reference" />
+        <attr name="kswBackRadius" format="dimension|reference" />
+        <attr name="kswBackDrawable" format="reference" />
+        <attr name="kswBackColor" format="color|reference" />
+        <attr name="kswFadeBack" format="boolean" />
+        <attr name="kswBackMeasureRatio" format="float" />
+        <attr name="kswAnimationDuration" format="integer" />
+        <attr name="kswTintColor" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CommonListItemView">
+        <attr name="item_style" format="integer" />
+        <attr name="leftSrc" format="reference" />
+        <attr name="rightSrc" format="reference" />
+        <attr name="rightVisibility" format="enum">
+            <enum name="visible" value="0" />
+
+            <enum name="gone" value="8" />
+        </attr>
+        <attr name="text" format="string" />
+        <attr name="mainTextColor" format="color|reference" />
+        <attr name="hint" format="string" />
+        <attr name="co_textSize" format="dimension" />
+        <attr name="detailText" format="string" />
+        <attr name="rightText" format="string" />
+        <attr name="rightTextColor" format="color|reference" />
+    </declare-styleable>
+    <style name="MyWidget" parent="@android:style/Theme" tools:ignore="ResourceName" />
+    <style name="MyWidget.SwitchButton">
+        <item name="kswThumbDrawable">@mipmap/switch_dot</item>
+        <item name="kswBackColor">@color/color_switch_button_bg</item>
+        <item name="kswBackMeasureRatio">2.05</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="kswThumbMarginTop">-2dp</item>
+        <item name="kswThumbMarginBottom">-2.5dp</item>
+        <item name="kswThumbMarginLeft">-5dp</item>
+        <item name="kswThumbMarginRight">-5dp</item>
+        <item name="kswThumbWidth">22dp</item>
+        <item name="kswThumbHeight">22dp</item>
+    </style>
 </resources>
