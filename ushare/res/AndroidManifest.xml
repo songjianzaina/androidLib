@@ -34,6 +34,7 @@
         <meta-data
             android:name="WECHAT_APP_KEY"
             android:value="${WECHAT_APP_KEY}" />
+
         <meta-data
             android:name="QQ_APPID"
             android:value="${QQ_APPID}" />
