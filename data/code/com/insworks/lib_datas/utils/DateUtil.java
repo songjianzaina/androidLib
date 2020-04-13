@@ -175,6 +175,31 @@ public class DateUtil {
     public static String getDate() {
         return format(System.currentTimeMillis());
     }
+    /**
+     * 快速获取当前年份
+     *
+     * @return
+     */
+    public static String getCurrentYear() {
+        return getCurrentDate().substring(0, 4);
+    }
+
+    /**
+     * 快速获取当前月份
+     *
+     * @return
+     */
+    public static String getCurrentMonth() {
+        return getCurrentDate().substring(4, 6);
+    }
+    /**
+     * 快速获取当前日
+     *
+     * @return
+     */
+    public static String getCurrentDay() {
+        return getCurrentDate().substring(6, 8);
+    }
 
     /**
      * 快速获取当前日期
@@ -294,5 +319,23 @@ public class DateUtil {
             //不属于今日 则返回月份和时分
             return monthDate + " " + hoursDate;
         }
+    }
+
+    /**
+     * 快速获取当月月初
+     *
+     * @return "yyyyMMdd"格式
+     */
+    public static String getFirstDay(String formatStr) {
+        // 获取当月第一天和最后一天
+        SimpleDateFormat format = new SimpleDateFormat(formatStr);
+        String firstday, lastday;
+        // 获取前月的第一天
+        Calendar cale = Calendar.getInstance();
+        cale.add(Calendar.MONTH, 0);
+        cale.set(Calendar.DAY_OF_MONTH, 1);
+        firstday = format.format(cale.getTime());
+        return firstday;
+
     }
 }
