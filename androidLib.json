@@ -18,7 +18,7 @@
     "dropmenu": "下拉菜单库",
     "scanner": "二维码扫描库",
     "picker": "选择器库",
-
+    "ushare2": "友盟社会分享库"
   }
 }
 
@@ -29,7 +29,7 @@
 "multipletheme": "主题切换库",
 "wetpay": "微信支付库",
 "alipay": "阿里支付库",
-"ushare": "友盟社会分享库",
+"ushare": "友盟社会分享库"
 "signature": "手写签名库",
 "viewpager": "viewpager快速集成库",
 "accessibility": "自动化组件",

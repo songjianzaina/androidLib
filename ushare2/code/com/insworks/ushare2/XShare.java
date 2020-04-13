@@ -1,4 +1,4 @@
-package com.insworks.ushare;
+package com.insworks.ushare2;
 
 import android.app.Activity;
 import android.graphics.Bitmap;
@@ -6,7 +6,7 @@ import android.text.TextUtils;
 import android.view.View;
 
 import com.insworks.lib_log.LogUtil;
-import com.insworks.ushare.utils.AppidConfig;
+import com.insworks.ushare2.utils.AppidConfig;
 import com.umeng.commonsdk.UMConfigure;
 import com.umeng.socialize.PlatformConfig;
 import com.umeng.socialize.ShareAction;
