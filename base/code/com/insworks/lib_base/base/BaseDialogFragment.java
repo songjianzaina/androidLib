@@ -1,6 +1,7 @@
 package com.insworks.lib_base.base;
 
 import android.app.Dialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.SystemClock;
