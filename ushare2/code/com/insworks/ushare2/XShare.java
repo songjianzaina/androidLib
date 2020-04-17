@@ -16,6 +16,8 @@ import com.umeng.socialize.media.UMImage;
 import com.umeng.socialize.media.UMWeb;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @ProjectName: cloudpay_new
@@ -66,6 +68,7 @@ public class XShare {
 
         }
     };
+    private List<String> imageList;
 
 
     /**
@@ -177,12 +180,38 @@ public class XShare {
         return this;
     }
 
+    /**
+     * 设置分享内容 图片形式
+     *
+     * @param title
+     * @param content
+     * @param targetUrl
+     */
+    public XShare setImage(String title, String content, String targetUrl, List<String> url) {
+        shareType = PICTURE;
+
+        setContent(title, content, targetUrl);
+        if (url != null) {
+            imageList = url;
+        }
+        return this;
+    }
+
     public void show() {
         ShareAction shareAction = new ShareAction(context);
         try {
             if (shareType == PICTURE) {
                 //分享图片
-                shareAction.withMedia(generateImage());
+                if (imageList != null && imageList.size() > 0) {
+                    UMImage[] list = new UMImage[12];
+                    for (int i = 0; i < imageList.size(); i++) {
+                        list[i] = new UMImage(context, imageList.get(i));
+                    }
+                    shareAction.withMedias(list);
+                } else {
+
+                    shareAction.withMedia(generateImage());
+                }
             } else {
                 //分享web
                 UMWeb web = new UMWeb(TARGET_URL);
