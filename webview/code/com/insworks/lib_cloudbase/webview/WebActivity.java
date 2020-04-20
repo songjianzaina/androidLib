@@ -12,6 +12,7 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebResourceError;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -144,6 +145,11 @@ public class WebActivity extends UIActivity {
         if (mTitle != null) {
             LogUtil.d("webview 标题: " + mTitle);
             setTitle(mTitle);
+            if (mTitle.equals("hide")) {
+                //隐藏标题栏
+                getTitleBar().setVisibility(View.GONE);
+                ((LinearLayout.LayoutParams) mWebView.getLayoutParams()).topMargin = getStatusBarHeight();
+            }
         }
         //以下是云中付自定义部分
         String rightText = getIntent().getStringExtra(RIGHT_TEXT);
