@@ -34,11 +34,14 @@ public class UserInfoBean extends ResponseBean  {
     public String have_pid;
     public String have_transpwd;
     public String level;
+    public String level_detail;
     public String realbank;
     public String realliving;
     public String realname;
     public String recode;
     public String token;
+    public String cid="";
+    public String invitation;
     public int userId;
     public UserinfoBean userinfo;
 
