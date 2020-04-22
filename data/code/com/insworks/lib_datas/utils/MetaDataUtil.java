@@ -81,6 +81,17 @@ public class MetaDataUtil {
     }
 
     /**
+     * 获取清单文件中Scheme标识
+     *
+     * @param context
+     * @param
+     * @return
+     */
+    public static String readAppScheme(Context context) {
+        return getAppInfoBundle(context).getString("app_scheme", "");
+    }
+
+    /**
      * 获取清单文件中主机地址
      *
      * @param context

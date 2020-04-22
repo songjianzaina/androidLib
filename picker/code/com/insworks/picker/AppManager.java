@@ -4,7 +4,9 @@ import android.app.Activity;
 import android.app.Service;
 import android.os.Bundle;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 
 import cn.addapp.pickers.util.LogUtils;
 
@@ -28,6 +30,16 @@ public class AppManager {
         return instance;
     }
 
+    /**
+     * 获取栈名称列表
+     */
+    public List<String> getActivityNameList() {
+        List<String> activityNameList = new ArrayList<>();
+        for (Activity activity : activities) {
+            activityNameList.add(activity.getClass().getSimpleName());
+        }
+        return activityNameList;
+    }
     /**
      * 注册Activity以便集中“finish()”
      *

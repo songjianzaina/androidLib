@@ -191,14 +191,19 @@ public class WebActivity extends UIActivity {
             @Override
             public boolean overrideUrlLoading(WebView view, String url) {
                 String scheme = Uri.parse(url).getScheme();
-                if (scheme != null) {
-                    scheme = scheme.toLowerCase();
-                }
+                boolean hasIntercept = false;
                 if ("http".equalsIgnoreCase(scheme) || "https".equalsIgnoreCase(scheme)) {
+                    //正常链接
                     mWebView.loadUrl(url);
+                } else {
+                    //H5内链
+                    if (url == null) {
+                        url = "";
+                    }
+                    hasIntercept = handleUrlLoading(view, url);
                 }
                 // 已经处理该链接请求
-                return true;
+                return hasIntercept;
             }
 
             @Override
@@ -258,6 +263,10 @@ public class WebActivity extends UIActivity {
             }
         });
 
+    }
+
+    protected boolean handleUrlLoading(WebView view, String url) {
+        return false;
     }
 
     @Override
