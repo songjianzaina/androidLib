@@ -42,6 +42,7 @@ public class UserInfoBean extends ResponseBean  {
     public String token;
     public String cid="";
     public String invitation;
+    public String url_super;
     public int userId;
     public UserinfoBean userinfo;
 
