@@ -9,7 +9,7 @@ import java.io.Serializable;
  * <p/>
  * Created by jiangyujiang on 16/5/31.
  */
-public class BaseBean implements Serializable  {
+public class BaseBean  {
 
     /*将JavaBean转成json文本*/
     public String toJson() {

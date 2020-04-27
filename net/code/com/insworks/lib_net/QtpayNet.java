@@ -286,7 +286,7 @@ public class QtpayNet {
 
                 } else if (code.equals("82") ) {
                     //弹出手淘授权框
-                    cloudCallBack.onCompleted("datas");
+                    cloudCallBack.onError(null,"datas");
 
                 } else if (code.equals("90") || code.equals("91") || code.equals("92") || code.equals("93")) {
                     Toast.makeText(EasyNetConfigure.getApplication(), responseBean.getMsg() + " 请重新登录", Toast.LENGTH_SHORT).show();
