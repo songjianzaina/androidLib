@@ -68,7 +68,7 @@ public class XShare {
 
         }
     };
-    private List<String> imageList;
+    private List<Object> imageList;
 
 
     /**
@@ -187,7 +187,7 @@ public class XShare {
      * @param content
      * @param targetUrl
      */
-    public XShare setImage(String title, String content, String targetUrl, List<String> url) {
+    public XShare setImage(String title, String content, String targetUrl, List<Object> url) {
         shareType = PICTURE;
 
         setContent(title, content, targetUrl);
@@ -205,7 +205,12 @@ public class XShare {
                 if (imageList != null && imageList.size() > 0) {
                     UMImage[] list = new UMImage[12];
                     for (int i = 0; i < imageList.size(); i++) {
-                        list[i] = new UMImage(context, imageList.get(i));
+                        if (imageList.get(i) instanceof String) {
+
+                        list[i] = new UMImage(context, (String) imageList.get(i));
+                        } else if (imageList.get(i) instanceof Bitmap) {
+                        list[i] = new UMImage(context, (Bitmap) imageList.get(i));
+                        }
                     }
                     shareAction.withMedias(list);
                 } else {
