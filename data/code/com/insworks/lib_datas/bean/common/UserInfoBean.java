@@ -39,6 +39,8 @@ public class UserInfoBean extends ResponseBean  {
     public String realliving;
     public String realname;
     public String recode;
+    public String Invitation_code;
+    public String level_icon;
     public String token;
     public String cid="";
     public String invitation;
