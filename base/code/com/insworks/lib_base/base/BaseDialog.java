@@ -181,7 +181,7 @@ public class BaseDialog extends AppCompatDialog {
         /**
          * 销毁当前 Dialog（仅供子类调用）
          */
-        protected void dismiss() {
+        public void dismiss() {
             mDialog.dismiss();
         }
 
