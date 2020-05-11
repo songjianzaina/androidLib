@@ -194,7 +194,7 @@ public class WebActivity extends UIActivity {
                 boolean hasIntercept = false;
                 if ("http".equalsIgnoreCase(scheme) || "https".equalsIgnoreCase(scheme)) {
                     //正常链接
-                    mWebView.loadUrl(url);
+//                    mWebView.loadUrl(url);
                 } else {
                     //H5内链
                     if (url == null) {
